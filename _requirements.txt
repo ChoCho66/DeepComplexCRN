@@ -1,0 +1,6 @@
+python 3.9
+torch 2.2.2
+scipy
+tqdm
+'numpy<2'
+soundfile

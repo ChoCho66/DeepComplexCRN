@@ -231,6 +231,9 @@ class DCCRN(nn.Module):
         out_wav = torch.squeeze(out_wav, 1)
         #out_wav = torch.tanh(out_wav)
         out_wav = torch.clamp_(out_wav,-1,1)
+        # 
+        # 
+        # return of DCCRN
         return out_spec,  out_wav
 
     def get_params(self, weight_decay=0.0):
